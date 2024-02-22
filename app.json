@@ -2,6 +2,7 @@
   "expo": {
     "name": "native-first",
     "slug": "native-first",
+    "scheme": "native-first",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +16,27 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.peturjack.nativefirst"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.peturjack.nativefirst"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "636fa8de-d18a-4a5e-b60c-16917fd21a08"
+      }
+    },
+    "owner": "peturjack",
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
